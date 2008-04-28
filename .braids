@@ -7,6 +7,11 @@ vendor/plugins/acts_as_state_machine:
   local_branch: braid/svn/vendor/plugins/acts-as-state-machine
   type: svn
   remote: http://elitists.textdriven.com/svn/plugins/acts_as_state_machine/trunk
+vendor/plugins/screw_unit: 
+  local_branch: braid/git/vendor/plugins/screw-unit/master
+  type: git
+  branch: master
+  remote: git://github.com/btakita/screw-unit-server.git
 endor/plugins/restful_authentication: 
   local_branch: braid/svn/vendor/plugins/restful-authentication
   type: svn
