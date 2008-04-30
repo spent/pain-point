@@ -101,7 +101,7 @@ var Screw = {
       match: function(expected, actual) {
         if (expected instanceof Array) {
           return Screw.Matchers.array_equal.match(actual, expected);
-        } else if(expected instanceof Object) {
+        } else {
           for(var key in expected) {
             if(expected[key] != actual[key]) {
               return false;
@@ -113,8 +113,6 @@ var Screw = {
             }
           }
           return true;
-        } else {
-          return expected == actual;
         }
       },
       failure_message: function(expected, actual, not) {
