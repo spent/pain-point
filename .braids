@@ -3,6 +3,10 @@ vendor/plugins/erector:
   local_branch: braid/svn/vendor/plugins/erector
   type: svn
   remote: svn://rubyforge.org/var/svn/erector/trunk
+vendor/plugins/polonium: 
+  local_branch: braid/svn/vendor/plugins/polonium
+  type: svn
+  remote: svn://rubyforge.org/var/svn/pivotalrb/polonium/trunk
 vendor/plugins/acts_as_state_machine: 
   local_branch: braid/svn/vendor/plugins/acts-as-state-machine
   type: svn
