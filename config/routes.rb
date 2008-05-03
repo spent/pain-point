@@ -1,7 +1,16 @@
 ActionController::Routing::Routes.draw do |map|
   map.resources :pain_points do |pain_points|
     pain_points.namespace("vote_submissions") do |vote_submissions|
-      vote_submissions.resources :up_vote, :controller => "vote_submissions/up_vote_submissions"
+      vote_submissions.resources(:up_vote, :controller => "vote_submissions/up_vote_submissions") do |up_vote|
+        map.create_pain_point_up_vote(
+          "/pain_points/:pain_point_id/up_vote",
+          :controller => "vote_submissions/up_vote_submissions", :action => "create"
+        )
+      end
+      map.create_pain_point_up_vote(
+        "/pain_points/:pain_point_id/up_vote",
+        :controller => "vote_submissions/up_vote_submissions", :action => "create"
+      )
       vote_submissions.resources :down_vote, :controller => "vote_submissions/down_vote_submissions"
     end
   end
