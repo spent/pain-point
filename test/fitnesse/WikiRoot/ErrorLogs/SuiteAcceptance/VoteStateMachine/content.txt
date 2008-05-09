@@ -1,0 +1,40 @@
+|'''Date: '''|!-8:13:10 AM (PDT) on Friday, May 9, 2008-!|
+|'''Command: '''|!-ruby test/fitnesse/runner.rb -v kellys-macbook.local 8081 32-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-5.746 seconds-!|
+----'''Standard Output:'''
+{{{Connecting to kellys-macbook.local:8081
+	> connected
+Processing document with 1623 bytes
+fitcleanupdb
+deleing amy
+1 #<User id: 8, login: "amy", email: "amy@example.com", crypted_password: "f36b81c871b3e4850f96c2807ebd4e822b1faf00", salt: "47bc00056c9286834336da0fc231321b4539bf96", created_at: "2008-05-09 08:12:46", updated_at: "2008-05-09 08:12:46", remember_token: nil, remember_token_expires_at: nil, activation_code: nil, activated_at: nil, state: "pending", deleted_at: nil>
+2 #<User id: 8, login: "amy", email: "amy@example.com", crypted_password: "f36b81c871b3e4850f96c2807ebd4e822b1faf00", salt: "47bc00056c9286834336da0fc231321b4539bf96", created_at: "2008-05-09 08:12:46", updated_at: "2008-05-09 08:12:46", remember_token: nil, remember_token_expires_at: nil, activation_code: nil, activated_at: nil, state: "pending", deleted_at: nil>
+vote state is 7777777777777777777 initial_state neutral
+vote state is 7777777777777777777 vote_type up_vote
+vote state is 7777777777777777777 before neutral
+vote state is 7777777777777777777 after  up
+vote state is 7777777777777777777 initial_state down
+vote state is 7777777777777777777 vote_type up_vote
+vote state is 7777777777777777777 before down
+vote state is 7777777777777777777 after  up
+vote state is 7777777777777777777 initial_state up
+vote state is 7777777777777777777 vote_type up_vote
+vote state is 7777777777777777777 before up
+vote state is 7777777777777777777 after  neutral
+vote state is 7777777777777777777 initial_state neutral
+vote state is 7777777777777777777 vote_type down_vote
+vote state is 7777777777777777777 before neutral
+vote state is 7777777777777777777 after  down
+vote state is 7777777777777777777 initial_state down
+vote state is 7777777777777777777 vote_type down_vote
+vote state is 7777777777777777777 before down
+vote state is 7777777777777777777 after  neutral
+vote state is 7777777777777777777 initial_state up
+vote state is 7777777777777777777 vote_type down_vote
+vote state is 7777777777777777777 before up
+vote state is 7777777777777777777 after  down
+	> 14 right, 0 wrong, 0 ignored, 0 exceptions
+Final counts: 14 right, 0 wrong, 0 ignored, 0 exceptions
+Exiting with code 0
+}}}

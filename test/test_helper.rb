@@ -1,6 +1,7 @@
 ENV["RAILS_ENV"] = "test"
 require File.expand_path(File.dirname(__FILE__) + "/../config/environment")
 require 'test_help'
+require 'open-uri'
 
 class Test::Unit::TestCase
   # Transactional fixtures accelerate your tests by wrapping each test method
@@ -35,4 +36,32 @@ class Test::Unit::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+end
+
+require 'fit/fit_server'
+require 'fit/type_adapter'
+module Fit
+  class GenericAdapter < TypeAdapter
+    def parse value
+      return true if value.downcase == 'true'
+      return false if value.downcase == 'false'
+      return nil if value == 'nil'
+      unless @type.nil?
+        result = @fixture.parse value, @type
+        return result unless result.nil?
+      end
+      return Integer(value) if value =~ /^-?\d+$/
+      return Float(value) if (value =~ /^-?\d*\.\d*$/ || value =~ /^-?\d*\.\d*[e|E]\d+$/)
+      elements = value.split(',')
+      unless elements.size == 1
+        array = []
+        element_adapter = TypeAdapter.for @target, @name, @is_output
+        elements.each do |e|
+          array << element_adapter.parse(e.strip)
+        end
+        return array
+      end
+      return value
+    end
+  end
 end

@@ -1,0 +1,73 @@
+8
+
+dir
+124256
+https://svn.pivotallabs.com/subversion/cinch/trunk/test/fitnesse/WikiRoot
+https://svn.pivotallabs.com/subversion
+
+
+
+2008-04-29T01:04:00.697975Z
+123742
+cinch
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ff112490-4206-0410-a331-ceb4712babc9
+
+SuiteAcceptance
+dir
+
+files
+dir
+
+FrontPage
+dir
+
+content.txt
+file
+
+
+
+
+2008-02-20T02:11:13.000000Z
+d41d8cd98f00b204e9800998ecf8427e
+2008-02-18T17:50:04.843210Z
+93708
+pivotal
+
+properties.xml
+file
+
+
+
+
+2008-02-20T02:11:13.000000Z
+0cd78629bb6efb784b1f1de623bc5e3b
+2008-02-18T17:50:04.843210Z
+93708
+pivotal
+
+properties
+file
+
+
+
+
+2008-02-20T02:11:13.000000Z
+fc8308496884818bff602ad47954313c
+2008-02-18T17:50:04.843210Z
+93708
+pivotal
+

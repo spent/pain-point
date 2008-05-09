@@ -1,0 +1,79 @@
+8
+
+dir
+124256
+https://svn.pivotallabs.com/subversion/cinch/trunk/test/fitnesse/WikiRoot/SuiteAcceptance
+https://svn.pivotallabs.com/subversion
+
+
+
+2008-04-29T01:04:00.697975Z
+123742
+cinch
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ff112490-4206-0410-a331-ceb4712babc9
+
+SetUp
+dir
+
+TestManufacturerCoopRebate
+dir
+
+SuiteCouponSearch
+dir
+
+SuiteFixtureDemos
+dir
+
+content.txt
+file
+
+
+
+
+2008-03-22T14:58:30.000000Z
+cbbb1c2a682710997624033b6e01e291
+2008-03-12T00:21:45.037635Z
+106075
+cinch
+
+SuiteDynamicPricing
+dir
+
+SuiteSetUp
+dir
+
+SuiteCouponLogic
+dir
+
+TestCampaignDateLogic
+dir
+
+properties.xml
+file
+
+
+
+
+2008-02-20T02:11:12.000000Z
+823d15a8982ef32721065963cf82fe89
+2008-02-19T23:03:45.293125Z
+94812
+pivotal
+
+TestSignupDiscount
+dir
+

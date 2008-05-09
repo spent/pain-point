@@ -1,0 +1,11 @@
+|'''Date: '''|!-8:15:17 AM (PDT) on Friday, May 9, 2008-!|
+|'''Command: '''|!-java -cp defaultPath fit.FitServer kellys-macbook.local 8081 34-!|
+|'''Exit code: '''|!--1-!|
+|'''Time elapsed: '''|!--1.210346117654E9 seconds-!|
+----'''Standard Error:'''
+{{{Exception in thread "main" java.lang.NoClassDefFoundError: fit/FitServer
+}}}----'''Internal Exception:'''
+{{{ java.lang.Exception: FitClient: external process terminated before a connection could be established.
+	fitnesse.components.CommandRunningFitClient$EarlyTerminationRunnable.run(CommandRunningFitClient.java:149)
+	java.lang.Thread.run(Thread.java:613)
+}}}
